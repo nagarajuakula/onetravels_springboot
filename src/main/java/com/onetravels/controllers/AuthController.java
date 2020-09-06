@@ -1,4 +1,4 @@
-package com.ontravels.controllers;
+package com.onetravels.controllers;
 
 import java.util.List;
 import java.util.Optional;
@@ -17,10 +17,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ontravels.model.AuthRequest;
-import com.ontravels.model.AuthResponse;
-import com.ontravels.repository.UserRepository;
-import com.ontravels.security.JwtTokenUtil;
+import com.onetravels.model.AuthRequest;
+import com.onetravels.model.AuthResponse;
+import com.onetravels.repository.UserRepository;
+import com.onetravels.security.JwtTokenUtil;
 
 @RestController
 @RequestMapping("/api/auth")
@@ -56,8 +56,8 @@ public class AuthController {
 		List<String> roles = user.getAuthorities().stream()
 					.map(item -> item.getAuthority())
 					.collect(Collectors.toList());
-		Optional<com.ontravels.model.User> optionalUser = userRepo.findUserByUsername(username).stream().findFirst();
-		com.ontravels.model.User loggedInUser = optionalUser.get();
+		Optional<com.onetravels.model.User> optionalUser = userRepo.findUserByUsername(username).stream().findFirst();
+		com.onetravels.model.User loggedInUser = optionalUser.get();
 		
 		return ResponseEntity.ok(new AuthResponse(jwt, roles, loggedInUser));
 	}

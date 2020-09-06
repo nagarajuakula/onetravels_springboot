@@ -1,4 +1,4 @@
-package com.ontravels.filters;
+package com.onetravels.filters;
 
 import java.io.IOException;
 
@@ -15,8 +15,8 @@ import org.springframework.security.web.authentication.WebAuthenticationDetailsS
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import com.ontravels.security.JwtTokenUtil;
-import com.ontravels.services.MyUserDetailsService;
+import com.onetravels.security.JwtTokenUtil;
+import com.onetravels.services.MyUserDetailsService;
 
 @Component
 public class AuthFilter extends OncePerRequestFilter {

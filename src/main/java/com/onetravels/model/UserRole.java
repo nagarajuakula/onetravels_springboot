@@ -1,4 +1,4 @@
-package com.ontravels.model;
+package com.onetravels.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

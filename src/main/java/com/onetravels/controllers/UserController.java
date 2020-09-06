@@ -1,4 +1,4 @@
-package com.ontravels.controllers;
+package com.onetravels.controllers;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -24,11 +24,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.ontravels.model.AuthRequest;
-import com.ontravels.model.RoleEnum;
-import com.ontravels.model.User;
-import com.ontravels.model.UserRole;
-import com.ontravels.repository.UserRepository;
+import com.onetravels.model.AuthRequest;
+import com.onetravels.model.RoleEnum;
+import com.onetravels.model.User;
+import com.onetravels.model.UserRole;
+import com.onetravels.repository.UserRepository;
 
 @RestController
 @RequestMapping("/api/user")

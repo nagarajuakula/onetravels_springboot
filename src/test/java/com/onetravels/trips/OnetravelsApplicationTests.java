@@ -1,4 +1,4 @@
-package com.ontravels.trips;
+package com.onetravels.trips;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

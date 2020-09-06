@@ -1,4 +1,4 @@
-package com.ontravels.model;
+package com.onetravels.model;
 
 import java.util.ArrayList;
 import java.util.Collection;

@@ -1,4 +1,4 @@
-package com.ontravels.services;
+package com.onetravels.services;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,9 +10,9 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.ontravels.model.User;
-import com.ontravels.model.UserRole;
-import com.ontravels.repository.UserRepository;
+import com.onetravels.model.User;
+import com.onetravels.model.UserRole;
+import com.onetravels.repository.UserRepository;
 
 @Service
 public class MyUserDetailsService implements UserDetailsService {

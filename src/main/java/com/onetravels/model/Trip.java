@@ -1,9 +1,8 @@
-package com.ontravels.model;
+package com.onetravels.model;
 
 import java.io.Serializable;
 import java.time.LocalDate;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -36,7 +35,7 @@ public class Trip implements Serializable{
 	private int distance;
 	
 	@JsonIgnore
-	@ManyToOne(cascade = CascadeType.ALL)
+	@ManyToOne
 	@JoinColumn(name="users_id", nullable=false)
 	private User user;
 	
@@ -86,5 +85,11 @@ public class Trip implements Serializable{
 
 	public void setDistance(int distance) {
 		this.distance = distance;
+	}
+
+	@Override
+	public String toString() {
+		return "Trip [id=" + id + ", date=" + date + ", from_location=" + from_location + ", to_location=" + to_location
+				+ ", distance=" + distance + "]";
 	}
 }

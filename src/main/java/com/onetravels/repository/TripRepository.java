@@ -1,10 +1,10 @@
-package com.ontravels.repository;
+package com.onetravels.repository;
 
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.ontravels.model.Trip;
+import com.onetravels.model.Trip;
 
 public interface TripRepository extends JpaRepository<Trip, Long>{
 

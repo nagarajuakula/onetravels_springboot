@@ -1,4 +1,4 @@
-package com.ontravels.model;
+package com.onetravels.model;
 
 public enum RoleEnum {
 

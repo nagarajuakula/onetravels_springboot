@@ -1,4 +1,4 @@
-package com.ontravels;
+package com.onetravels;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

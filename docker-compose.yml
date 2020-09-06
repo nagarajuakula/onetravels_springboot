@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  rabbitmq-container:
+    image: rabbitmq:3-management
+    environment: 
+      - SPRING_RABBITMQ_HOST:my-rabbit
+    ports:
+      - 5672:5672
+      - 15672:15672
+      
+  app-container:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    ports:
+      - 8085:8085
+    depends_on:
+      - rabbitmq-container
+    network_mode: "host"
